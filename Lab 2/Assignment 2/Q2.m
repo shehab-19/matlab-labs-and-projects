@@ -1,0 +1,13 @@
+x = linspace(0, 10, 100);
+y1 = sin(x)./x;
+y2 = (1./(x-1).^2)+x;
+y3=(x.^2+1)./(x.^2-4);
+y4=((10-x).^(1/3)-2)./((4-x.^2).^(1/2));
+subplot(2, 2, 1);
+plot(x, y1);title('y1');xlabel('x');ylabel('y');      
+subplot(2, 2, 2); 
+plot(x, y2);title('y2');xlabel('x');ylabel('y');         
+subplot(2, 2, 3);
+plot(x, y3);title('y3');xlabel('x');ylabel('y');          
+subplot(2, 2, 4);
+plot(x, y4);title('y4');xlabel('x');ylabel('y'); 
